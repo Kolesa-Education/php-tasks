@@ -4,8 +4,8 @@
 Задание проеряется [автотестом](/tests/Unit/Practices/Practice2DateTime/TimeMachineTest.php), можно смотреть там примеры использования.
 
 Перед заданием рекомендуется прочитать статьи:
-- [Работа с датами.](https://github.com/Kolesa-Education/backend-articles/php/exceptions.md)
-- [Обработка ошибок в PHP.](https://github.com/Kolesa-Education/backend-articles/php/dates.md)
+- [Работа с датами.](https://github.com/Kolesa-Education/backend-articles/blob/master/php/dates.md)
+- [Обработка ошибок в PHP.](https://github.com/Kolesa-Education/backend-articles/blob/master/php/exceptions.md)
 
 ## Задание
 Вы нашли машину времени в подвале у вашего дедушки.
