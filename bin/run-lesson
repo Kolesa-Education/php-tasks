@@ -1,0 +1,15 @@
+#!/usr/bin/env php
+
+<?php
+
+use App\Tasks\Example;
+
+$autoloadPath = __DIR__ . '/../vendor/autoload.php';
+
+if (file_exists($autoloadPath)) {
+    require_once $autoloadPath;
+} else {
+    echo 'Run composer install before this script';
+}
+
+echo (new Example())->run();

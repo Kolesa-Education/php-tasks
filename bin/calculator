@@ -1,0 +1,20 @@
+#!/usr/bin/env php
+
+<?php
+
+use App\Practices\Practice1\Calculator;
+
+$autoloadPath = __DIR__ . '/../vendor/autoload.php';
+
+if (file_exists($autoloadPath)) {
+    require_once $autoloadPath;
+} else {
+    echo 'Run composer install before this script';
+}
+
+$a = readline('Enter a first operand: ');
+$b = readline('Enter a second operand: ');
+$operator = readline('Enter a operator: ');
+$result = (new Calculator())->run($a, $b, $operator);
+
+echo $result . PHP_EOL;
