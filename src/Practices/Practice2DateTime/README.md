@@ -1,7 +1,7 @@
 # Практика 2. Машина времени
 
 В задаче нам предстоит поработать с датами, форматированием текста и выбросом исключений.
-Задание проеряется [автотестом](/tests/Unit/Practices/Practice2DateTime/TimeMachineTest.php), можно смотреть там примеры использования.
+Задание проверяется [автотестом](/tests/Unit/Practices/Practice2DateTime/TimeMachineTest.php), можно смотреть там примеры использования.
 
 Перед заданием рекомендуется прочитать статьи:
 - [Работа с датами.](https://github.com/Kolesa-Education/backend-articles/blob/master/php/dates.md)
