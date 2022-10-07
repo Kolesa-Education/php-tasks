@@ -22,7 +22,7 @@
 
 ### Автоматическая проверка
 На созданные ветки запустится сборка проекта и автотесты. Их результат будет отображаться во вкладке [Actions](https://github.com/Kolesa-Education/php-tasks/actions).
-Успешно выполнененная сборка будет зелёной - [пример](https://github.com/Kolesa-Education/php-tasks/actions/runs/3196897466/jobs/5219422222)
+Успешно выполнененная сборка будет зелёной - [пример](https://github.com/Kolesa-Education/php-tasks/actions/runs/3196897466/jobs/5219422222).   
 Изучить вывод тестов можно нажав на `Build` и перейдя во вкладку `test with phpunit`
 
 То, какие тесты будут запущены в GitHub, нужно указывать в файле TESTS_PATH.
