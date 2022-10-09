@@ -4,18 +4,15 @@ namespace App\Tasks\Task1;
 
 class NumberCollection
 {
-    /**
-     * Напишите реализацию метода суммирования массива чисел
-     *
-     * $numberCollection = new NumberCollection();
-     * $sum = $numberCollection->sumOfArray([1, 2, 3, 1]);
-     * echo $sum // 7
-     *
-     * @param  int[] $integers
-     * @return int
-     */
     public function sumOfArray(array $integers): int
     {
-        return 0;
+        $sum = 0;
+           for ($i=0; $i < count($integers); $i++) {
+                $sum += $integers[$i];
+           }
+        return $sum;
     }
 }
+$numberCollection = new NumberCollection();
+$sum = $numberCollection->sumOfArray([1, 2, 3, 1]);
+echo $sum;
