@@ -16,15 +16,20 @@ class Calculator
 
     public function multiply($a, $b)
     {
-        // Напишите реализацию метода multiply, который умножает $a на $b
+        return $a * $b;
     }
 
     public function divide($a, $b)
-    {
-        // Напишите реализацию метода divide, который делит $a на $b. Если деление на $b невозможно, верните null
+    {   if ($b === 0) {
+            return null;
+        } 
+        return $a / $b;
     }
 
-    // Напишите новый метод pow. Он должен возводить $a в степень $b
+    public function pow($a, $b)
+    {
+        return $a ** $b;
+    }
 
     public function run($a, $b, $operator = '+')
     {
@@ -33,11 +38,17 @@ class Calculator
                 return $this->add($a, $b);
             case '-':
                 return $this->sub($a, $b);
+            case '*':
+                return $this->multiply($a, $b);
+            case '/':
+                if ($b === 0) {
+                    return 'Divide by zero';
+                }
+                return $this->divide($a, $b);
+            case '^':
+                return $this->pow($a, $b);
+            default:
+                return "Unknown operator: $operator";
         }
-
-        // Допишите реализацию метода run. Метод принимает два операнда и оператор
-        // затем выбирает какой метод этого же класса нужно вызвать с этими операндами
-        // Если невозможно делить, метод должен возвращать строку "Divide by zero"
-        // Если передан неизвестный оператор, метод должен возвращать строку "Unknown operator: $operator"
     }
 }
